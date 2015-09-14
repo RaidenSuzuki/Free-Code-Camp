@@ -1,0 +1,10 @@
+function palindrome(str) {
+  rsp = (/\s*\W*/g);
+    if (str.toLowerCase().replace(rsp,"",str) === str.replace(rsp,"",str).toLowerCase().split('').reverse('').join('')) {
+    return true;
+  }  else {
+    return false;
+  }
+}
+
+palindrome("eye");
