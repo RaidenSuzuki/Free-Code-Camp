@@ -1,0 +1,10 @@
+unction end(str, target) {
+  var strl = target.length;
+  if (str.substr(-strl) == target) {
+    return true;
+  } else {
+    return false;
+  }
+  return strl;
+}
+end('Bastian', 'n');
