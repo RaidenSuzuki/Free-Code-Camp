@@ -1,0 +1,11 @@
+function mutation(arr) {
+  split = arr.splice(1).toString().toLowerCase();
+  rem = arr.toString().toLowerCase();
+  for (i = 0; i < split.length; i++) {
+  if (rem.indexOf(split.charAt(i)) == -1) {
+  return false; 
+  }   
+    }
+    return true;
+}
+mutation(['hello', 'hey']);
